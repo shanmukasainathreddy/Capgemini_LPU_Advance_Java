@@ -55,6 +55,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Assignment_12Feb"/>
 			<item value="OneToMany"/>
 			<item value="Junitusingfile"/>
 			<item value="person_hibernate1"/>
