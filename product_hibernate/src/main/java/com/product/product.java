@@ -1,11 +1,15 @@
 package com.product;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class product {
+	@Id
 	int id;
 	String name;
 	double price;
 	int Quantity;
-	
 	public int getId() {
 		return id;
 	}
@@ -24,12 +28,12 @@ public class product {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public void setQuantity(int i) {
-		// TODO Auto-generated method stub
-		this.Quantity = Quantity;
-	}
-	public int getQuqntity() {
+	public int getQuantity() {
 		return Quantity;
 	}
+	public void setQuantity(int quantity) {
+		this.Quantity=quantity;
+	}
+	
 	
 }

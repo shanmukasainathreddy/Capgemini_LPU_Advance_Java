@@ -45,8 +45,9 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.person"/>
 			<item value="com.prac"/>
+			<item value="com.cap"/>
+			<item value="com.person"/>
 			<item value="com.product"/>
 			<item value="com.Capgemini1"/>
 			<item value="com.capgemini"/>
@@ -54,6 +55,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="OneToMany"/>
+			<item value="Junitusingfile"/>
 			<item value="person_hibernate1"/>
 			<item value="person_hibernate"/>
 			<item value="person"/>

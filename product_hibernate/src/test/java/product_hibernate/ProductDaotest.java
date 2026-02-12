@@ -34,9 +34,9 @@ public class ProductDaotest {
 		productDao dao = new productDao();
 
 		product pro = new product();
-		pro.setId(3);
+		pro.setId(1);
 		pro.setName("Pencil");
-		pro.setPrice(5);
+		pro.setPrice(20);
 		pro.setQuantity(10);
 		dao.insertProduct(pro);
 //		String acutal_res = dao.insertProduct(pro);

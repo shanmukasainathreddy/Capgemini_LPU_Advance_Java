@@ -52,7 +52,6 @@ public class persondoatest {
 		assertEquals("Rohit" , p1.getName());
 		
 		
-		
  }
 	
 	@Test
