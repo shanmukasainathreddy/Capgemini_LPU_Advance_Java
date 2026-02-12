@@ -1,0 +1,7 @@
+java.lang.NullPointerException
+	at com.prac.Calculator.reverseString(User.java:24)
+	at com.prac.CalculatorTest.reverseTestNull(CalculatorTest.java:22)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+

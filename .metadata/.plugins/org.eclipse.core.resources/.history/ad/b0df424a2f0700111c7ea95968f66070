@@ -1,0 +1,80 @@
+package product_hibernate;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+
+import com.product.product;
+import com.product.productDao;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class ProductTest {
+
+    private EntityManagerFactory emf;
+    private EntityManager em;
+
+    @BeforeAll
+    void initEmf() {
+        emf = Persistence.createEntityManagerFactory("postgres");
+    }
+
+    @BeforeEach
+    void initEm() {
+        em = emf.createEntityManager();
+    }
+
+    @AfterEach
+    void closeEm() {
+        if (em != null && em.isOpen()) {
+            em.close();
+        }
+    }
+
+    @AfterAll
+    void closeEmf() {
+        if (emf != null && emf.isOpen()) {
+            emf.close();
+        }
+    }
+
+    @Test
+    void insertProductTest() {
+        productDao dao = new productDao();
+        product pro = new product();
+
+        pro.setId(1);
+        pro.setName("Pencil");
+        pro.setPrice(5);
+
+        dao.insertProduct(pro);
+
+        assertNotNull(pro);
+    }
+
+    @Test
+    void findByIdTest() {
+        productDao dao = new productDao();
+        product p = dao.findById(1);
+
+        assertNotNull(p);
+    }
+
+    @Test
+    void deleteProductTest() {
+        productDao dao = new productDao();
+        dao.deleteProduct(1);
+
+        product p = dao.findById(1);
+        assertNull(p);
+    }
+}

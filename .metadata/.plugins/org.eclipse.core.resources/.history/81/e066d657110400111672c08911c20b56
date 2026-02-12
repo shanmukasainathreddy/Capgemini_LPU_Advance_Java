@@ -1,0 +1,55 @@
+package com.prac;
+
+public class User {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Calculator.add(20,30));
+		System.out.println(Calculator.reverseString("hello"));
+		
+		
+	}
+
+}
+
+
+class Calculator {
+
+	public static int add(int a,int b) {
+		// TODO Auto-generated method stub
+		return a+b;
+	}
+	public static String reverseString(String str) {
+		String reverse = "";
+		
+		if(reverse.equals(null)) return null;
+		
+		for(int i=str.length()-1;i>=0;i--) {
+			reverse = reverse + str.charAt(i);
+		}
+		return reverse;
+	}
+	
+	public static boolean palindrome(int a) {
+		int original = a;
+		int rev = 0;
+		while(a > 0) {
+			int ld = a %10;
+			rev = rev * 10 + ld;
+			a/=10;		
+		}
+		if(rev == original) return true;
+		else return false;
+	}
+	
+	public static int factorial(int a) {
+		int pr = 1;
+		for(int i=1;i<a;i++) {
+			if(a%i==0) {
+				pr *= i;
+			}
+		}
+		return pr;
+	}
+}
+

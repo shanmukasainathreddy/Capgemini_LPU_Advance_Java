@@ -1,0 +1,10 @@
+package person_hibernate1;
+
+public class persondoatest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

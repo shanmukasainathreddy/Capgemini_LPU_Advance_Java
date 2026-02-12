@@ -1,0 +1,19 @@
+  package product_hibernate;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+
+public class ProductDaotest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		static EntityManagerFactory emf;
+		
+		EntityManager em;
+		
+		@BeforeEach
+		
+		
+	}
+
+}

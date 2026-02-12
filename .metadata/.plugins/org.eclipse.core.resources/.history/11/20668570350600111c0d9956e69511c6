@@ -1,0 +1,37 @@
+package com.connectdatabase;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class Employeeconn_insertion {
+	public static void main(String[] args) {
+		String url = "jdbc:postgresql://localhost:5432/College";
+		String un = "postgres";
+		String pwd = "root";
+		
+		try {
+			Class.forName("org.postgresql.Driver");
+			
+			Connection connect = DriverManager.getConnection(url,un,pwd);
+			
+			System.out.println("Connection created");
+			
+			String sql = "insert into Employee values(101,'shannu','Google'),(102,'Aryan','Amazon')";
+			
+			System.out.println("Data inserted");
+			
+			String sql2 = ""
+			Statement stmt = connect.createStatement();
+			
+			stmt.execute(sql);
+			
+			connect.close();
+		}catch(ClassNotFoundException e) {
+			e.printStackTrace();
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+	}
+}

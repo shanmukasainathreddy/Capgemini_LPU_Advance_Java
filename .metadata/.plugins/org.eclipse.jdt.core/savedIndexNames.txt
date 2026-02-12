@@ -1,0 +1,9 @@
+INDEX VERSION 1.134+C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\.metadata\.plugins\org.eclipse.jdt.core
+255896353.index
+2783979781.index
+1518368824.index
+3785753399.index
+1937538506.index
+59167267.index
+1865797976.index
+3205034387.index

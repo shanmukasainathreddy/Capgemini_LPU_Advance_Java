@@ -1,0 +1,32 @@
+package person_hibernate1;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+
+import org.junit.jupiter.api.Test;
+
+import com.prac.person;
+import com.prac.persondao;
+
+public class persondoatest {
+
+	static EntityManagerFactory emf;
+	static EntityManager em;
+	
+	
+	@Test
+	public void insertdata() {
+		persondao dao = new persondao();
+		
+		person p = new person();
+		
+		p.setId(45);
+		p.setName("Rohit");
+		p.setDOB("1999");
+		p.setAddress("lalchuak");
+		p.setPincode(144422);
+		
+		
+	}
+
+}
