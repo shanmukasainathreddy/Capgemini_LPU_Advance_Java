@@ -3,13 +3,14 @@ package com.product;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+//@Entity (name = "table name u want)
 @Entity
 public class product {
 	@Id
-	int id;
-	String name;
-	double price;
-	int Quantity;
+	private int id;
+	private String name;
+	private double price;
+	private int Quantity;
 	public int getId() {
 		return id;
 	}

@@ -47,16 +47,15 @@ public class User {
 			String jpql2 = "delete from Engine where id = ?1";
 			
 			
+			Query updatequery = em.createQuery(jpql1);
+			updatequery.setParameter(1, 101);
+			
+			Query deletequery = em.createQuery(jpql2);
+			deletequery.setParameter(1, 101);
+			
 			et.begin();
-			Query query1 = em.createQuery(jpql1);
-			query1.setParameter(1, 101);
-//			query1.setParameter(1, null);
-			
-			Query query2 = em.createQuery(jpql2);
-			query2.setParameter(1, 101);
-			
-			query1.executeUpdate();
-			query2.executeUpdate();
+			updatequery.executeUpdate();
+			deletequery.executeUpdate();
 			
 //			em.remove(e);
 			et.commit();

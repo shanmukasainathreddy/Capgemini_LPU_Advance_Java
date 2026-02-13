@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 public class studentdao {
@@ -67,6 +68,20 @@ public class studentdao {
 			}else {
 				System.out.println("Student not found");
 			}
+		}
+		
+		//to get student count
+		public int getStudentCount() {
+		    Query q = em.createQuery("SELECT COUNT(s) FROM Student s");
+		    Long count = (Long) q.getSingleResult();
+		    return count.intValue();
+		}
+
+		//student  marks > 80 
+		public List<student> findStudentsWithMarksGreaterThan80() {
+		    Query q = em.createQuery("SELECT s FROM Student s WHERE s.marks > 80");
+		    List<student> ans=q.getResultList();
+		    return ans;
 		}
 		
 		//close emf
