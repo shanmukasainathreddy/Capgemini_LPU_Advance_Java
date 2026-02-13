@@ -39,7 +39,7 @@ public class studentdaotest {
 		student s = new student();
 		s.setSid(102);
 		s.setSname("Rohit");
-		s.setSemail("rohit2gmail.com");
+		s.setSemail("rohit@gmail.com");
 		s.setSmarks(45.0);
 		
 		dao.savestudent(s);

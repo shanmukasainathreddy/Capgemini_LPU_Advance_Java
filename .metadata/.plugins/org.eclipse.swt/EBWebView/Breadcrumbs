@@ -1,46 +1,120 @@
-1:36:10 Tab47 StartNav234 #typed
-1:36:10 Tab47 FinishNav234
-1:36:10 Tab47 PageLoad
-1:36:25 Tab48 StartNav235 #typed
-1:36:25 Tab48 FinishNav235
-1:36:25 Tab48 PageLoad
-1:36:28 Tab48 StartNav236 #typed
-1:36:28 Tab48 FinishNav236
-1:36:28 Tab48 PageLoad
-1:36:33 Tab47 StartNav237 #typed
-1:36:33 Tab47 FinishNav237
-1:36:33 Tab47 PageLoad
-1:36:35 Tab47 StartNav238 #typed
-1:36:35 Tab47 FinishNav238
-1:36:35 Tab47 PageLoad
-1:37:06 Tab47 StartNav239 #typed
-1:37:06 Tab47 FinishNav239
-1:37:06 Tab47 PageLoad
-1:37:19 Tab47 StartNav240 #typed
-1:37:19 Tab47 FinishNav240
-1:37:19 Tab47 PageLoad
-1:38:27 Tab47 StartNav241 #typed
-1:38:27 Tab47 FinishNav241
-1:38:27 Tab47 PageLoad
-1:39:14 Tab47 StartNav242 #typed
-1:39:14 Tab47 FinishNav242
-1:39:14 Tab47 PageLoad
-1:39:15 Tab47 StartNav243 #typed
-1:39:15 Tab47 FinishNav243
-1:39:15 Tab47 PageLoad
-1:39:19 Tab47 StartNav244 #typed
-1:39:19 Tab47 FinishNav244
-1:39:19 Tab47 PageLoad
-1:39:21 Tab47 StartNav245 #typed
-1:39:21 Tab47 FinishNav245
-1:39:21 Tab47 PageLoad
-1:39:24 Tab47 StartNav246 #typed
-1:39:24 Tab47 FinishNav246
-1:39:24 Tab47 PageLoad
-1:40:16 Tab47 StartNav247 #typed
-1:40:16 Tab47 FinishNav247
-1:40:16 Tab47 PageLoad
-1:40:35 Tab47 StartNav248 #typed
-1:40:35 Tab47 FinishNav248
-1:40:35 Tab47 PageLoad
-1:40:41 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:38:10 Tab22 FinishNav63
+0:38:10 Tab22 PageLoad
+0:38:19 Memory Pressure: Moderate
+0:38:29 Memory Pressure: Moderate
+0:38:39 Memory Pressure: Moderate
+0:38:49 Memory Pressure: Moderate
+0:38:59 Memory Pressure: Moderate
+0:39:09 Memory Pressure: Moderate
+0:39:19 Memory Pressure: Moderate
+0:39:24 Memory Pressure: None
+0:39:28 Tab22 StartNav64 #typed
+0:39:28 Tab22 FinishNav64
+0:39:28 Tab22 PageLoad
+0:39:29 Memory Pressure: Moderate
+0:39:29 Tab22 StartNav65 #typed
+0:39:29 Tab22 FinishNav65
+0:39:29 Tab22 PageLoad
+0:39:36 Tab22 StartNav66 #typed
+0:39:36 Tab22 FinishNav66
+0:39:36 Tab22 PageLoad
+0:39:38 Tab22 StartNav67 #typed
+0:39:38 Tab22 FinishNav67
+0:39:38 Tab22 PageLoad
+0:39:39 Memory Pressure: Moderate
+0:39:42 Tab22 StartNav68 #typed
+0:39:42 Tab22 FinishNav68
+0:39:42 Tab22 PageLoad
+0:39:42 Tab22 StartNav69 #typed
+0:39:42 Tab22 FinishNav69
+0:39:42 Tab22 PageLoad
+0:39:49 Memory Pressure: Moderate
+0:39:50 Tab22 StartNav70 #typed
+0:39:50 Tab22 FinishNav70
+0:39:50 Tab22 PageLoad
+0:39:53 Tab22 StartNav71 #typed
+0:39:53 Tab22 FinishNav71
+0:39:53 Tab22 PageLoad
+0:39:56 Tab22 StartNav72 #typed
+0:39:56 Tab22 FinishNav72
+0:39:56 Tab22 PageLoad
+0:39:57 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:39:57 Microsoft.UnloadController.HasCompletedUnloadProcessing_False
+0:39:57 Microsoft.Shutdown.OnWindowClosing
+0:39:57 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:39:57 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:39:57 Microsoft.Shutdown.TabStripModel.CloseAllTabs
+0:39:57 Microsoft.Shutdown.TabStripModel.CloseTabs
+0:39:57 Microsoft.Shutdown.TabStripModel.CloseTabs_EdgeBeforeClosingAllTabs
+0:39:57 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl
+0:39:57 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_TabClosable
+0:39:57 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosingAll
+0:39:57 Microsoft.Shutdown.TabStripModel.CloseWebContentses
+0:39:57 Microsoft.Shutdown.TabStripModel.CloseWebContentses_FastShutdown
+0:39:57 Microsoft.Shutdown.TabStripModel.ShouldRunUnloadListenerBeforeClosing_false
+0:39:57 Tab22 RenderProcessGone
+0:39:57 Microsoft.UnloadController.ClearUnloadState
+0:39:57 Microsoft.Shutdown.TabStripModel.RunUnloadListenerBeforeClosing_false
+0:39:57 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosedAll
+0:39:57 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+0:39:57 Microsoft.UnloadController.ClearUnloadState
+0:39:57 Browser22 Close Tab22 at 0
+0:39:57 Tab22 WebContentsDestroyed
+0:39:57 Microsoft.UnloadController.TabStripEmpty
+0:39:57 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:39:57 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:39:57 Microsoft.Shutdown.OnWindowClosing
+0:39:57 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:39:57 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:39:57 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+0:39:57 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+0:39:57 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+0:39:57 Widget Closed: BrowserWidget
+0:39:57 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:39:57 Microsoft.Shutdown.OnWindowClosing
+0:39:57 Microsoft.Shutdown.OnWindowClosing_DeleteScheduled
+0:39:57 Microsoft.Browser_Removed
+0:39:59 Memory Pressure: Moderate
+0:40:09 Memory Pressure: Moderate
+0:40:19 Memory Pressure: Moderate
+0:40:24 Memory Pressure: None
+0:40:25 Microsoft.NewBrowser_Popup
+0:40:25 Microsoft.BrowserList.AddBrowser
+0:40:25 Browser23 Insert active Tab23 at 0
+0:40:25 Tab23 StartNav73 #auto_toplevel
+0:40:25 Tab23 StartNav74 #typed
+0:40:26 Tab23 FinishNav73
+0:40:26 Tab23 PageLoad
+0:40:26 Tab23 FinishNav74
+0:40:26 Tab23 PageLoad
+0:40:27 Microsoft.NewBrowser_Popup
+0:40:27 Microsoft.BrowserList.AddBrowser
+0:40:28 Browser24 Insert active Tab24 at 0
+0:40:28 Tab24 StartNav75 #auto_toplevel
+0:40:28 Tab24 FinishNav75
+0:40:28 Tab24 PageLoad
+0:40:28 Tab24 StartNav76 #typed
+0:40:28 Tab24 FinishNav76
+0:40:28 Tab24 PageLoad
+0:40:28 Tab23 StartNav77 #typed
+0:40:28 Tab23 FinishNav77
+0:40:28 Tab23 PageLoad
+0:40:29 Memory Pressure: Moderate
+0:40:33 Tab24 StartNav78 #typed
+0:40:33 Tab24 FinishNav78
+0:40:33 Tab24 PageLoad
+0:40:34 Tab23 StartNav79 #typed
+0:40:34 Tab23 FinishNav79
+0:40:34 Tab23 PageLoad
+0:40:39 Memory Pressure: Moderate
+0:40:49 Memory Pressure: Moderate
+0:40:59 Memory Pressure: Moderate
+0:41:09 Memory Pressure: Moderate
+0:41:14 Memory Pressure: None
+0:41:59 Memory Pressure: Moderate
+0:42:04 Memory Pressure: None
+0:46:19 Memory Pressure: Moderate
+0:46:24 Memory Pressure: None
+0:47:57 Tab23 StartNav80 #typed
+0:47:57 Tab23 FinishNav80
+0:47:57 Tab23 PageLoad

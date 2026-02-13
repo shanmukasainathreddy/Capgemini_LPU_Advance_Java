@@ -10,7 +10,7 @@ public class Engine {
 	private String type;
 	private String fueltype;
 	private double mileage;
-	private int cc;
+	private String cc;
 	public int getId() {
 		return id;
 	}
@@ -35,10 +35,10 @@ public class Engine {
 	public void setMileage(double mileage) {
 		this.mileage = mileage;
 	}
-	public int getCc() {
+	public String getCc() {
 		return cc;
 	}
-	public void setCc(int cc) {
+	public void setCc(String cc) {
 		this.cc = cc;
 	}
 	
