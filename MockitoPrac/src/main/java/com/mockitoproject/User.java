@@ -1,7 +1,7 @@
 package com.mockitoproject;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity(name = "Account_Holder_Details")
 public class User {

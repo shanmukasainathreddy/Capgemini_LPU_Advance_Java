@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\ManyToOne\src\main\java\com\ManyToOne\Admin.java"/>
 			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\OneToMany\src\main\java\com\onetoonemapping\User.java"/>
 			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\LearnJDBC\src\main\java\com\connectdatabase\EmployeeCRUD.java"/>
 			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\basicofjdbc\src\main\java\com\prac\Employee.java"/>
@@ -56,6 +57,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="EcommerceModule"/>
+			<item value="ManyToOne"/>
 			<item value="Assignment_13Feb"/>
 			<item value="mockito"/>
 			<item value="MockitoPrac"/>

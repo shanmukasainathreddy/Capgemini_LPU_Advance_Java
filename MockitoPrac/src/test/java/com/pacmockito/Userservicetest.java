@@ -5,49 +5,54 @@ package com.pacmockito;
 // we want Unit Testing -> Service -> using  fake DAO ( done unit testing in 1 layer)
 // we create fake DAO with the help of Mockito 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.mockitoproject.Calculator;
-import com.mockitoproject.Calculatorservice;
+import com.mockitoproject.User;
 import com.mockitoproject.Userdao;
-import com.mockitoproject.Userservice;
 
+@ExtendWith(MockitoExtension.class)
 public class Userservicetest {
 	
+	@Mock
+	Userdao daoMock;
+	
+	@InjectMocks
+	Userservicetest service;
 	
 	@Test
-	public void testgettypeofaccountholder() {
-		Userdao dao = new Userdao();
-		Userservice us = new Userservice(dao);
+	public void typeOfUser() {
+		//UserDao daoMock=mock(UserDao.class);
+		 
+		// create fake object
+		User fackObject=new User();
+		fackObject.setId(1);
+		fackObject.setBalance(2000); 
+		fackObject.setName("Allen");
 		
-		String actual_res = us.typeofaccountholder(101);
+		//mention what object should return 
+		when(daoMock.findById(1)).thenReturn(fackObject);
 		
-		assertEquals(actual_res , "Regular Account Holder");
-		
-		
-	}
-	
-	public void testdoubleadd() {
-		
-		//step-1 : mock an object to create fake object
-		Calculator cmock = mock(Calculator.class);
-		
-		//step-2 : what mock object should return
-		when(cmock.add(5,5)).thenReturn(20);
-		
-		//step-3 : inject the mock reference
-		
-		Calculatorservice service = new Calculatorservice(cmock);
-		
-		int res = service.doubleadd(5, 5);
-		
-		assertEquals(20,res);
+		User user1=new User();
+		user1.setId(2);
+		user1.setBalance(1000);
+		user1.setName("Miller");
+		when(daoMock.findById(2)).thenReturn(user1);
 		
 		
+		//injecting mock object
+//		UserService service=new UserService(daoMock);
+		
+		String res=service.typeOfUser(1);
+		assertEquals("regular user",res);
+		
+		String res1=service.typeOfUser(2);
+		assertEquals("new user",res1);
 	}
 
-	
 }
