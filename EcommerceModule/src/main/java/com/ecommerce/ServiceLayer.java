@@ -61,7 +61,6 @@ public class ServiceLayer {
 		}
 	}
 
-	// Extra helper method: create order quickly
 	public PurchaseOrder createOrder(int id, double amount) {
 		PurchaseOrder po = new PurchaseOrder();
 		po.setId(id);

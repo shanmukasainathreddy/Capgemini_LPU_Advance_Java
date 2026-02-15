@@ -64,7 +64,7 @@ public class EcommerceTest {
 		User fetched = userDao.finduser(1);
 
 		assertNotNull(fetched);
-		assertEquals(2, fetched.getPo().size()); // ✅ getPo()
+		assertEquals(2, fetched.getPo().size()); 
 	}
 
 	// Test 3 - ManyToOne Persist Test
@@ -81,7 +81,7 @@ public class EcommerceTest {
 
 		assertNotNull(fetchedPay);
 		assertEquals("UPI", fetchedPay.getMode());
-		assertNotNull(fetchedPay.getPo1()); // ✅ because in Payment class it's po1
+		assertNotNull(fetchedPay.getPo1()); 
 		assertEquals(2001, fetchedPay.getPo1().getId());
 	}
 

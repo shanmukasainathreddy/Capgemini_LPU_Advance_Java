@@ -57,6 +57,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="HospitalAppoinmentSystem"/>
+			<item value="HospitalAppointmentSystem_14Feb"/>
+			<item value="HospitalManagementSystem_14Feb"/>
 			<item value="EcommerceModule"/>
 			<item value="ManyToOne"/>
 			<item value="Assignment_13Feb"/>
@@ -69,9 +72,6 @@
 			<item value="person_hibernate"/>
 			<item value="person"/>
 			<item value="product_hibernate"/>
-			<item value="hibernate_basics"/>
-			<item value="LearnJDBC"/>
-			<item value="basicofjdbc"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
