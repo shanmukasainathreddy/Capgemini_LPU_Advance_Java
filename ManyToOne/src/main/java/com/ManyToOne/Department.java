@@ -10,6 +10,7 @@ public class Department {
 	private String name;
 	private String managername;
 	private int noofemp;
+	
 	public int getD_id() {
 		return d_id;
 	}

@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\EcommerceModule"/>
+			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\HospitalAppointmentSystem_14Feb\src\main\java\com\Hospital\ServiceLayer.java"/>
 			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\ManyToOne\src\main\java\com\ManyToOne\Admin.java"/>
 			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\OneToMany\src\main\java\com\onetoonemapping\User.java"/>
 			<item value="C:\Users\Sainath Reddy\Downloads\WORK\LPU Academics\training_capgemini\Advance_Java\LearnJDBC\src\main\java\com\connectdatabase\EmployeeCRUD.java"/>
@@ -57,6 +59,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="BLOG"/>
+			<item value="CourseEnrollment"/>
+			<item value="CRM"/>
+			<item value="manytomanybidriectional"/>
 			<item value="HospitalAppoinmentSystem"/>
 			<item value="HospitalAppointmentSystem_14Feb"/>
 			<item value="HospitalManagementSystem_14Feb"/>
@@ -68,10 +74,6 @@
 			<item value="Assignment_12Feb"/>
 			<item value="OneToMany"/>
 			<item value="Junitusingfile"/>
-			<item value="person_hibernate1"/>
-			<item value="person_hibernate"/>
-			<item value="person"/>
-			<item value="product_hibernate"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
