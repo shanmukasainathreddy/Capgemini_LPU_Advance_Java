@@ -105,7 +105,7 @@ public class blogtest {
         List<Comment> comments = em.createQuery(
                 "select c from Comment c where c.post.id = :pid",
                 Comment.class)
-                .setParameter("pid", 2)
+                .setParameter("pid", 2) 
                 .getResultList();
 
         Assertions.assertTrue(comments.size() >= 0);
