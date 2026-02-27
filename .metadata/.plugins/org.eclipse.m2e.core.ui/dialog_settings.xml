@@ -59,6 +59,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Fintech"/>
+			<item value="HospitalManagementSystemER"/>
 			<item value="cache_practice"/>
 			<item value="BLOG"/>
 			<item value="CourseEnrollment"/>
@@ -72,8 +74,6 @@
 			<item value="Assignment_13Feb"/>
 			<item value="mockito"/>
 			<item value="MockitoPrac"/>
-			<item value="Assignment_12Feb"/>
-			<item value="OneToMany"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

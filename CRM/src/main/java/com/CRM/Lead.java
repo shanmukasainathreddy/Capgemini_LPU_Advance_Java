@@ -1,57 +1,97 @@
+
 package com.CRM;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "leads")
 public class Lead {
-	@Id
-	private long id;
-	private String source;
-	private String status;
-	
-	@ManyToOne(cascade = CascadeType.ALL)
-	private SalesEmployee se;
 
-	public long getId() {
+	@Id
+	@GeneratedValue
+	private int id;
+	private String name;
+	private String source;
+	private String contactInfo;
+	
+	
+	public Lead() {}
+
+
+	public Lead(int id, String name, String source, String contactInfo) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.source = source;
+		this.contactInfo = contactInfo;
+	}
+	
+	@ManyToOne
+	private SalesEmployee employee;
+
+
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+
+	public void setId(int id) {
 		this.id = id;
 	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 
 	public String getSource() {
 		return source;
 	}
 
+
 	public void setSource(String source) {
 		this.source = source;
 	}
 
-	public String getStatus() {
-		return status;
+
+	public String getContactInfo() {
+		return contactInfo;
 	}
 
-	public void setStatus(String status) {
-		this.status = status;
+
+	public void setContactInfo(String contactInfo) {
+		this.contactInfo = contactInfo;
 	}
 
-	public SalesEmployee getSe() {
-		return se;
+
+	public SalesEmployee getEmployee() {
+		return employee;
 	}
 
-	public void setSe(SalesEmployee se) {
-		this.se = se;
+
+	public void setEmployee(SalesEmployee employee) {
+		this.employee = employee;
 	}
-	
+
 
 	@Override
 	public String toString() {
-		return "Lead [id=" + id + ", source=" + source + ", status=" + status + ", se=" + se + "]";
+		return "Lead [id=" + id + ", name=" + name + ", source=" + source + ", contactInfo=" + contactInfo
+				+ ", employee=" + employee + "]";
 	}
+	
+	
+	
 	
 	
 }
